@@ -1,6 +1,6 @@
-# Rio Haskett — portfolio
+# Mario Haskett Jr — portfolio
 
-A minimal, single-file portfolio for Mario “Rio” Haskett Jr.
+A minimal, single-file portfolio for Mario Haskett Jr.
 
 - No build step, no dependencies: everything lives in `index.html`.
 - Light and dark mode follow the visitor's system setting.
@@ -8,8 +8,8 @@ A minimal, single-file portfolio for Mario “Rio” Haskett Jr.
 
 ## Edit
 
-Open `index.html` and replace the placeholder intro, projects and contact links.
-To add a project, duplicate one `<li>` in the **Work** list.
+Open `index.html` and edit the intro, roles, education and contact links.
+To add an entry, duplicate one `<li>` in that list.
 
 ## Preview
 

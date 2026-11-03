@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Rio Haskett</title>
-  <meta name="description" content="Mario “Rio” Haskett Jr. — portfolio.">
+  <title>Mario Haskett Jr</title>
+  <meta name="description" content="Mario Haskett Jr — nonprofit president, group home director of operations and mental health agency consultant from Richmond, Virginia.">
   <style>
     :root {
       --bg: #fafaf9;
@@ -35,7 +35,7 @@
     a:hover { text-decoration-color: var(--accent); }
 
     header h1 { font-size: 2rem; font-weight: 600; letter-spacing: -0.02em; line-height: 1.2; }
-    header .aka { color: var(--muted); font-size: 0.95rem; margin-top: 4px; }
+    header .place { color: var(--muted); font-size: 0.95rem; margin-top: 4px; }
     header .intro { margin-top: 24px; max-width: 52ch; }
 
     section { margin-top: 64px; }
@@ -45,15 +45,9 @@
     }
 
     .list { list-style: none; border-top: 1px solid var(--line); }
-    .list li { border-bottom: 1px solid var(--line); }
-    .list a, .list .row {
-      display: flex; justify-content: space-between; gap: 16px;
-      padding: 14px 0; text-decoration: none;
-    }
-    .list a:hover .title { color: var(--accent); }
-    .list .title { font-weight: 500; }
+    .list li { border-bottom: 1px solid var(--line); padding: 14px 0; }
+    .list .title { font-weight: 500; display: block; }
     .list .desc { color: var(--muted); font-size: 0.95rem; }
-    .list .meta { color: var(--muted); font-size: 0.9rem; white-space: nowrap; }
 
     .links { display: flex; flex-wrap: wrap; gap: 8px 20px; }
 
@@ -63,35 +57,43 @@
 <body>
   <main>
     <header>
-      <h1>Mario Haskett Jr.</h1>
-      <p class="aka">Rio</p>
+      <h1>Mario Haskett Jr</h1>
+      <p class="place">Richmond, Virginia</p>
       <p class="intro">
-        <!-- TODO: one or two sentences about who you are and what you make. -->
-        I build things and write about what I learn along the way.
+        Nonprofit president, group home operations director and mental health
+        agency consultant, working to strengthen the organizations that care
+        for people and communities.
       </p>
     </header>
 
     <section>
-      <h2>Work</h2>
+      <h2>Roles</h2>
       <ul class="list">
-        <!-- Duplicate an <li> per project. -->
         <li>
-          <a href="#">
-            <span>
-              <span class="title">Project one</span><br>
-              <span class="desc">A short line on what it is.</span>
-            </span>
-            <span class="meta">2026</span>
-          </a>
+          <span class="title">President</span>
+          <span class="desc">Nonprofit organization</span>
         </li>
         <li>
-          <a href="#">
-            <span>
-              <span class="title">Project two</span><br>
-              <span class="desc">A short line on what it is.</span>
-            </span>
-            <span class="meta">2025</span>
-          </a>
+          <span class="title">Director of Operations</span>
+          <span class="desc">Group home</span>
+        </li>
+        <li>
+          <span class="title">Consultant</span>
+          <span class="desc">Mental health agencies</span>
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Education</h2>
+      <ul class="list">
+        <li>
+          <span class="title">Hampton University</span>
+          <span class="desc">Master’s, Administration and Leadership</span>
+        </li>
+        <li>
+          <span class="title">Harvard University</span>
+          <span class="desc">Psychology</span>
         </li>
       </ul>
     </section>
@@ -99,13 +101,11 @@
     <section>
       <h2>Contact</h2>
       <div class="links">
-        <a href="mailto:hello@example.com">Email</a>
-        <a href="https://github.com/mario-haskett">GitHub</a>
-        <a href="#">LinkedIn</a>
+        <a href="https://www.linkedin.com/in/mario-haskett-jr-8a6556145">LinkedIn</a>
       </div>
     </section>
 
-    <footer>© <span id="y">2026</span> Mario Haskett Jr.</footer>
+    <footer>© <span id="y">2026</span> Mario Haskett Jr</footer>
   </main>
   <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
 </body>
