@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Rio Haskett</title>
+  <meta name="description" content="Mario “Rio” Haskett Jr. — portfolio.">
+  <style>
+    :root {
+      --bg: #fafaf9;
+      --fg: #1c1917;
+      --muted: #78716c;
+      --line: #e7e5e4;
+      --accent: #c2410c;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #0c0a09;
+        --fg: #f5f5f4;
+        --muted: #a8a29e;
+        --line: #292524;
+        --accent: #fb923c;
+      }
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { -webkit-text-size-adjust: 100%; }
+    body {
+      background: var(--bg);
+      color: var(--fg);
+      font: 17px/1.6 ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+      padding: 0 16px;
+    }
+    main { max-width: 640px; margin: 0 auto; padding: 96px 0 64px; }
+    a { color: inherit; text-decoration-color: var(--line); text-underline-offset: 3px; }
+    a:hover { text-decoration-color: var(--accent); }
+
+    header h1 { font-size: 2rem; font-weight: 600; letter-spacing: -0.02em; line-height: 1.2; }
+    header .aka { color: var(--muted); font-size: 0.95rem; margin-top: 4px; }
+    header .intro { margin-top: 24px; max-width: 52ch; }
+
+    section { margin-top: 64px; }
+    h2 {
+      font-size: 0.8rem; font-weight: 500; text-transform: uppercase;
+      letter-spacing: 0.08em; color: var(--muted); margin-bottom: 16px;
+    }
+
+    .list { list-style: none; border-top: 1px solid var(--line); }
+    .list li { border-bottom: 1px solid var(--line); }
+    .list a, .list .row {
+      display: flex; justify-content: space-between; gap: 16px;
+      padding: 14px 0; text-decoration: none;
+    }
+    .list a:hover .title { color: var(--accent); }
+    .list .title { font-weight: 500; }
+    .list .desc { color: var(--muted); font-size: 0.95rem; }
+    .list .meta { color: var(--muted); font-size: 0.9rem; white-space: nowrap; }
+
+    .links { display: flex; flex-wrap: wrap; gap: 8px 20px; }
+
+    footer { margin-top: 96px; color: var(--muted); font-size: 0.85rem; }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <h1>Mario Haskett Jr.</h1>
+      <p class="aka">Rio</p>
+      <p class="intro">
+        <!-- TODO: one or two sentences about who you are and what you make. -->
+        I build things and write about what I learn along the way.
+      </p>
+    </header>
+
+    <section>
+      <h2>Work</h2>
+      <ul class="list">
+        <!-- Duplicate an <li> per project. -->
+        <li>
+          <a href="#">
+            <span>
+              <span class="title">Project one</span><br>
+              <span class="desc">A short line on what it is.</span>
+            </span>
+            <span class="meta">2026</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <span>
+              <span class="title">Project two</span><br>
+              <span class="desc">A short line on what it is.</span>
+            </span>
+            <span class="meta">2025</span>
+          </a>
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Contact</h2>
+      <div class="links">
+        <a href="mailto:hello@example.com">Email</a>
+        <a href="https://github.com/mario-haskett">GitHub</a>
+        <a href="#">LinkedIn</a>
+      </div>
+    </section>
+
+    <footer>© <span id="y">2026</span> Mario Haskett Jr.</footer>
+  </main>
+  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
+</html>
